@@ -122,6 +122,7 @@ void (*onion_log) (onion_log_level level, const char *filename, int lineno,
  */
 void onion_log_stderr(onion_log_level level, const char *filename, int lineno,
                       const char *fmt, ...) {
+/*
 #ifdef HAVE_PTHREADS
   pthread_once(&is_logging_initialized, onion_init_logging);
 #else
@@ -208,6 +209,7 @@ void onion_log_stderr(onion_log_level level, const char *filename, int lineno,
   // writes anyway, and performance tests show no diference on Linux 4.4.3
   int w = write(2, strout, strout_length);
   ((void)(w));                  // w unused, no prob.
+*/
 }
 
 /**
