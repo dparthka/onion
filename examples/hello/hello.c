@@ -30,7 +30,7 @@
 
 int hello(void *p, onion_request * req, onion_response * res) {
   //onion_response_set_length(res, 11);
-  onion_response_write0(res, "Hello world");
+  onion_response_write0(res, "Hello!");
 //  if (onion_request_get_query(req, "1")) {
   //  onion_response_printf(res, "<p>Path: %s",
     //                      onion_request_get_query(req, "1"));
