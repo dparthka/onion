@@ -36,7 +36,7 @@ int hello(void *p, onion_request * req, onion_response * res) {
     //                      onion_request_get_query(req, "1"));
  // }
   //onion_response_printf(res, "<p>Client description: %s",
-                        onion_request_get_client_description(req));
+//                        onion_request_get_client_description(req));
   return OCS_PROCESSED;
 }
 
